@@ -83,14 +83,18 @@ $$
 |-0.81|-0.81|
 |-0.31|-0.31|
 |0.71|-1.01|
+
 协方差矩阵为：
+
 $$
 COV = \begin{bmatrix}
 0.6166, 0.6154\\
 0.6154,0.7166
 \end{bmatrix}
 $$
+
 求得特征值为:
+
 $$
 Eigen\hspace{0.2cm} Value=
 \begin{bmatrix}
@@ -98,7 +102,9 @@ Eigen\hspace{0.2cm} Value=
 1.2840
 \end{bmatrix}
 $$
+
 特征向量为：
+
 $$
 Eigen\hspace{0.2cm} Vector(2\times 1)=
 Eigen\hspace{0.2cm} Value=
@@ -107,7 +113,9 @@ Eigen\hspace{0.2cm} Value=
 0.6779, -0.7352
 \end{bmatrix}
 $$
+
 降维后的矩阵为：
+
 $$
 \begin{align}
 data'' &= data'(10\times 2) \times Eigen\hspace{0.2cm} Vector(2\times 1)\\
@@ -125,6 +133,7 @@ data'' &= data'(10\times 2) \times Eigen\hspace{0.2cm} Vector(2\times 1)\\
 \end{bmatrix}
 \end{align}
 $$
+
 这样就将原始的n维特征变成了k维，这k维就是原始特征在k维上的投影。如下图：
 ![](./pics/181.png)
 斜着的两条线就分别是正交的特征向量（由于协方差矩阵是对称的，因此其特征向量正交），最后一步的矩阵乘法就是将原始样本点分别往特征向量对应的轴上做投影。
