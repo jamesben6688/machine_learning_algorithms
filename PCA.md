@@ -198,6 +198,3 @@ plt.plot(X[:, 0], X[:, 1], "og", alpha=0.3)
 X_trans = pca.fit_transform(X)  # 得到降维后的数据
 X_new = pca.inverse_trainsform(X_trans)  #还原回原来的坐标轴
 ```
-
-
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
